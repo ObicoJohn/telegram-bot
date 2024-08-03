@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background-color: rgb(68, 62, 62);
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sponsor {
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(231, 218, 218);
+    border-radius: 25px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.progress {
+    padding: 0px 15px;
+
+    .level {
+        display: flex;
+        gap: 20px;
+
+        .level-name {
+            display: flex;
+            gap: 5px;
+
+            i {
+                font-size: 18px;
+            }
+        }
+
+        p.lvl {
+            color: gray;
+        }
+    }
+
+    .progress-gradient {
+        margin-top: 5px;
+        width: 100%;
+        height: 10px;
+        background: yellow;
+        border-radius: 15px;
+        border: 1px solid rgb(231, 218, 218);
+
+    }
+}
+
+.box-award {
+    margin-top: 15px;
+    padding: 15px 15px;
+    background-color: rgba(24, 21, 1, 0.74);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.87) inset;
+
+    .box {
+        width: 120px;
+        height: 100px;
+        background-color: rgba(209, 202, 202, 0.582);
+        border-radius: 15px;
+        position: relative;
+
+        .bullet {
+            display: flex;
+            float: right;
+            margin: 7px;
+        }
+
+        .bullet::before {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: gold;
+            opacity: 0.4;
+            content: "";
+        }
+
+        .box-icon {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%) !important;
+        }
+
+        p {
+            font-size: 12px;
+            margin-bottom: 5px;
+            position: absolute;
+            top: 65%;
+            left: 23%;
+        }
+
+        .box-icon img {
+            background-color: darkslategray;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+}
+
+.main-box {
+    margin-top: 5px;
+    height: 450px;
+    background-image: url(images/Mew.PNG);
+    background-position: center;
+    background-size: cover;
+
+    .coin-balance {
+        padding-top: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .coin-amount {
+        font-size: 25px;
+    }
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.918);
+    margin: 2px 0;
+    display: flex;
+    gap: 10px;
+    position: relative;
+
+    .home {
+        position: relative;
+        top: 30%;
+        left: 0;
+        transform: translate(0, -20%);
+        width: 20%;
+        margin-left: 15px;
+    }
+
+    .footer-box1 {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        width: 70%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 380px) {
+    .box-award {
+        gap: 10px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .box-award {
+        gap: 10px;
+
+        .box {
+            width: 100px;
+            height: 80px;
+
+            p {
+                font-size: 10px;
+                margin-bottom: 5px;
+                position: absolute;
+                top: 70%;
+                left: 23%;
+            }
+        }
+    }
+
+    .footer {
+        justify-content: space-around;
+
+    }
+
+
+}
