@@ -9,10 +9,81 @@ body {
     color: white;
 }
 
+.preloader {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url(images/IMG_9976.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    .loading {
+        height: 40px;
+        width: 40px;
+        border: 4px solid #fff;
+        border-top-color: #00008b;
+        position: absolute;
+        margin: auto;
+        top: 40%;
+        left: 55%;
+        transform: translate(-10%, -90%);
+        border-radius: 50%;
+        animation: spin 1.5s infinite linear;
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.load-text {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    /* background-color: red; */
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .LT {
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.966);
+        font-weight: bolder;
+    }
+
+    .LT1 {
+        font-size: 40px;
+        color: rgb(248, 102, 5);
+        font-weight: bolder;
+    }
+
+    .LT2 {
+        font-size: 40px;
+        color: #000;
+        font-weight: bolder;
+    }
+
+    .LT3 {
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.589);
+        font-weight: bolder;
+    }
+}
+
 .container {
     background-color: rgb(68, 62, 62);
     height: 100%;
     width: 100%;
+    display: none;
 }
 
 .header {
