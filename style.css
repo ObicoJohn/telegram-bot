@@ -41,6 +41,7 @@ body {
 }
 
 .load-text {
+    margin-top: 10px;
     position: absolute;
     top: 60%;
     left: 60%;
@@ -276,6 +277,17 @@ body {
         justify-content: space-around;
 
     }
+}
 
-
+@media screen and (min-width: 426px) {
+    .load-text {
+        margin-top: 10px;
+        position: absolute;
+        top: 60%;
+        left: 55%;
+        transform: translate(-42%, -50%);
+        height: 150px;
+        width: 300px;
+        text-align: center;
+    }
 }
