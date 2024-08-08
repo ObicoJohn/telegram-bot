@@ -284,18 +284,19 @@ body {
 
         #btn {
             background-color: #808080;
-            width: 80%;
-            height: 30px;
-            font-size: 15px;
-            font-weight: bold;
-            border-radius: 15px;
-            color: #fff;
-            outline: none;
-            border: none;
-            /* opacity: 0.9; */
+    width: 80%;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    color: #fff;
+    outline: none;
+    border: none;
+    text-align: center;
         }
-    }
-
 }
 
 .footer {
